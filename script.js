@@ -1,4 +1,4 @@
-﻿// Preloader script
+// Preloader script
     if ('scrollRestoration' in history) {
       history.scrollRestoration = 'manual';
     }
@@ -8,38 +8,56 @@
       window.scrollTo(0, 0);
       const progressBar = document.querySelector('.preloader-progress-bar');
       let progress = 0;
+      let isLoaded = false;
+      let minTimeElapsed = false;
+
+      // Smooth progress animation incrementing up to 90%
       const progressInterval = setInterval(() => {
-        if (progress >= 85) {
+        if (!isLoaded) {
+          if (progress < 90) {
+            progress += Math.floor(Math.random() * 4) + 1; // Smooth slower progress increments
+            if (progress > 90) progress = 90;
+            if (progressBar) progressBar.style.width = progress + '%';
+          }
+        } else if (minTimeElapsed) {
+          // If both window is loaded and minimum duration elapsed
           clearInterval(progressInterval);
-        } else {
-          progress += Math.floor(Math.random() * 12) + 5;
-          if (progress > 85) progress = 85;
-          if (progressBar) progressBar.style.width = progress + '%';
+          if (progressBar) progressBar.style.width = '100%';
+          setTimeout(() => {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+              preloader.classList.add('fade-out');
+              document.body.classList.remove('loading');
+            }
+          }, 450);
         }
-      }, 100);
+      }, 30);
+
+      // Enforce a minimum display time of 2.2 seconds to allow the entrance motion of the poster to complete nicely
+      setTimeout(() => {
+        minTimeElapsed = true;
+        if (isLoaded) {
+          clearInterval(progressInterval);
+          if (progressBar) progressBar.style.width = '100%';
+          setTimeout(() => {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+              preloader.classList.add('fade-out');
+              document.body.classList.remove('loading');
+            }
+          }, 450);
+        }
+      }, 2200);
 
       window.addEventListener('load', () => {
-        clearInterval(progressInterval);
-        if (progressBar) progressBar.style.width = '100%';
-        setTimeout(() => {
-          const preloader = document.getElementById('preloader');
-          if (preloader) {
-            preloader.classList.add('fade-out');
-            document.body.classList.remove('loading');
-          }
-        }, 400);
+        isLoaded = true;
       });
       
       // Fallback in case window load doesn't fire or takes too long
       setTimeout(() => {
-        clearInterval(progressInterval);
-        if (progressBar) progressBar.style.width = '100%';
-        const preloader = document.getElementById('preloader');
-        if (preloader && !preloader.classList.contains('fade-out')) {
-          preloader.classList.add('fade-out');
-          document.body.classList.remove('loading');
-        }
-      }, 5000); // 5 seconds absolute max
+        isLoaded = true;
+        minTimeElapsed = true;
+      }, 5000); // 5 seconds absolute max fallback
     });
 
     // Scroll reveal
@@ -70,9 +88,11 @@
     // Nav scroll effect
     const nav = document.querySelector('nav');
     window.addEventListener('scroll', () => {
-      nav.style.background = window.scrollY > 60
-        ? 'rgba(13,10,4,.97)'
-        : 'rgba(13,10,4,.85)';
+      if (window.scrollY > 60) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
     });
 
     // Timeline scroll effect
@@ -87,106 +107,71 @@
       });
     }
 
-    // Gallery horizontal scroll effect
-    const gallerySection = document.getElementById('gallery-scroll');
-    const galleryTrack = document.querySelector('.gallery-track');
-    let lastScrollY = window.scrollY;
-    let isBypassing = false;
-    let isDragging = false;
-    let startX;
-    let startScrollY;
-    let sectionTopScrollY;
-    let sectionBottomScrollY;
+    // Gallery vertical parallax effect
+    const gallerySection = document.getElementById('gallery-vertical');
+    const colLeft = document.querySelector('.col-left');
+    const colCenter = document.querySelector('.col-center');
+    const colRight = document.querySelector('.col-right');
 
-    if (gallerySection && galleryTrack) {
-      // --- Drag to Scroll Logic ---
-      const startDrag = (e) => {
-        isDragging = true;
-        startX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
-        startScrollY = window.scrollY;
+    if (gallerySection && colLeft && colCenter && colRight) {
+      let targetY = 0;
+      let currentY = 0;
+      const ease = 0.08;
 
-        const rect = gallerySection.getBoundingClientRect();
-        sectionTopScrollY = window.scrollY + rect.top;
-        const scrollDistance = gallerySection.offsetHeight - window.innerHeight;
-        sectionBottomScrollY = sectionTopScrollY + scrollDistance;
-      };
-
-      const moveDrag = (e) => {
-        if (!isDragging) return;
-        if (e.cancelable) e.preventDefault(); // Prevent native scroll & selection
-
-        const currentX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
-        const dx = startX - currentX; // distance moved left
-
-        const scrollDistance = gallerySection.offsetHeight - window.innerHeight;
-        const maxTranslate = galleryTrack.scrollWidth - window.innerWidth;
-
-        if (maxTranslate > 0) {
-          const ratio = scrollDistance / maxTranslate;
-          let targetScrollY = startScrollY + (dx * ratio);
-
-          // Clamp target scroll within the sticky phase
-          targetScrollY = Math.max(sectionTopScrollY, Math.min(sectionBottomScrollY, targetScrollY));
-
-          window.scrollTo({
-            top: targetScrollY,
-            behavior: 'instant'
-          });
-        }
-      };
-
-      const stopDrag = () => {
-        isDragging = false;
-      };
-
-      galleryTrack.addEventListener('mousedown', startDrag);
-      galleryTrack.addEventListener('touchstart', startDrag, { passive: false });
-
-      window.addEventListener('mousemove', moveDrag, { passive: false });
-      window.addEventListener('touchmove', moveDrag, { passive: false });
-      window.addEventListener('mouseup', stopDrag);
-      window.addEventListener('touchend', stopDrag);
-
-      // --- Scroll Animation Logic ---
       window.addEventListener('scroll', () => {
-        if (isBypassing) return;
-
-        const currentScrollY = window.scrollY;
-        const isScrollingDown = currentScrollY > lastScrollY;
-
         const rect = gallerySection.getBoundingClientRect();
+        const winHeight = window.innerHeight;
 
-        // Bypass horizontal scroll when scrolling UP
-        if (!isDragging && !isScrollingDown && rect.top < 0 && rect.bottom > window.innerHeight) {
-          isBypassing = true;
-          // Instantly jump to the top of the gallery section
-          window.scrollTo({
-            top: currentScrollY + rect.top,
-            behavior: 'instant'
-          });
-
-          // Reset track immediately
-          galleryTrack.style.transform = `translate3d(0, 0, 0)`;
-
-          setTimeout(() => {
-            isBypassing = false;
-            lastScrollY = window.scrollY;
-          }, 50);
-          return;
-        }
-
-        lastScrollY = currentScrollY;
-
-        // The scrollable distance is the total height of the section minus the viewport height
-        const scrollDistance = rect.height - window.innerHeight;
-        // How far we have scrolled into the section
-        const scrollProgress = Math.max(0, Math.min(1, -rect.top / scrollDistance));
-
-        // The maximum distance the track can be translated
-        const maxTranslate = galleryTrack.scrollWidth - window.innerWidth;
-
-        if (maxTranslate > 0) {
-          galleryTrack.style.transform = `translate3d(-${scrollProgress * maxTranslate}px, 0, 0)`;
+        // If the gallery section is visible in the viewport
+        if (rect.top < winHeight && rect.bottom > 0) {
+          // Calculate offset relative to viewport center
+          const sectionCenter = rect.top + rect.height / 2;
+          const viewportCenter = winHeight / 2;
+          
+          // Target vertical translation offset
+          targetY = (sectionCenter - viewportCenter) * 0.12;
         }
       });
+
+      const updateParallax = () => {
+        if (window.innerWidth > 768) {
+          // Smooth translation using lerp
+          currentY += (targetY - currentY) * ease;
+
+          // Shift left/right columns and center column in opposite directions
+          colLeft.style.transform = `translate3d(0, ${currentY}px, 0)`;
+          colRight.style.transform = `translate3d(0, ${currentY}px, 0)`;
+          colCenter.style.transform = `translate3d(0, ${-currentY}px, 0)`;
+
+          // Subtle internal image parallax translation inside the wrapper to add extra depth
+          const items = gallerySection.querySelectorAll('.gallery-item');
+          items.forEach(item => {
+            const itemRect = item.getBoundingClientRect();
+            const winHeight = window.innerHeight;
+            if (itemRect.top < winHeight && itemRect.bottom > 0) {
+              const itemCenter = itemRect.top + itemRect.height / 2;
+              const relativePos = (itemCenter - winHeight / 2) / (winHeight / 2);
+              const img = item.querySelector('img');
+              if (img) {
+                // Translate image vertically slightly in opposite direction of scroll
+                img.style.transform = `scale(1.15) translate3d(0, ${relativePos * -20}px, 0)`;
+              }
+            }
+          });
+        } else {
+          // Clear styles on mobile devices
+          colLeft.style.transform = '';
+          colCenter.style.transform = '';
+          colRight.style.transform = '';
+          const images = gallerySection.querySelectorAll('.gallery-item img');
+          images.forEach(img => {
+            img.style.transform = '';
+          });
+        }
+
+        requestAnimationFrame(updateParallax);
+      };
+
+      // Start the update loop
+      requestAnimationFrame(updateParallax);
     }

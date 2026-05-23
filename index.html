@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 
 <head>
@@ -18,7 +18,10 @@
   <!-- Preloader -->
   <div id="preloader">
     <div class="preloader-content">
-      <img src="Logo/CEOTINHTHUC-QTvKN-FULL đỏ.png" alt="CEO Tinh Thức" class="preloader-logo">
+      <div class="preloader-poster-wrapper">
+        <img src="Image/z7838130677216_20271815b30421a6c5e6215735cfbcac.jpg" alt="CEO Tinh Thức Poster"
+          class="preloader-poster">
+      </div>
       <div class="preloader-progress-wrap">
         <div class="preloader-progress-bar"></div>
       </div>
@@ -26,17 +29,24 @@
   </div>
 
   <!-- NAV -->
-  <nav>
-    <a href="#hero" class="nav-logo">
-      <img src="Logo/CEOTINHTHUC-QTvKN-FULL đỏ.png" alt="CEO Tinh Thức">
-    </a>
+  <nav class="gold-nav">
+    <div class="nav-section organizer-section">
+      <span class="section-label">Đơn vị tổ chức</span>
+      <div class="logos-group">
+        <img src="Logo/Logo SVF tr.png" alt="SVF" class="nav-logo-img logo-svf">
+        <img src="Logo/Cay Nen Doanh Nhan_Logo(final).png" alt="Cấy Nền Doanh Nhân" class="nav-logo-img logo-caynen">
+        <img src="Logo/JCI Hoi An.png" alt="JCI Hội An" class="nav-logo-img logo-jci">
+      </div>
+    </div>
 
-    <div class="nav-companions">
-      <span class="companion-text">Đơn vị đồng hành</span>
-      <img src="Logo/JCI Hoi An.png" alt="JCI" class="logo-jci">
-      <img src="Logo/Logo SVF tr.png" alt="SVF">
-      <img src="Logo/Cay Nen Doanh Nhan_Logo(final).png" alt="Cấy Nền" class="logo-caynen">
-      <img src="Logo/DN_365_All_White.png" alt="DN 365">
+    <div class="nav-section companion-section">
+      <span class="section-label">Đơn vị đồng hành</span>
+      <div class="logos-group">
+        <img src="Logo/JCI Hue.png" alt="JCI Huế" class="nav-logo-img logo-jci">
+        <img src="Logo/JCI Danang.png" alt="JCI Đà Nẵng" class="nav-logo-img logo-jci">
+        <img src="Logo/DN_365_All_White.png" alt="Đà Nẵng 365" class="nav-logo-img logo-danang">
+        <img src="Logo/CEOTINHTHUC-QTvKN-FULL.png" alt="CEO Tinh Thức" class="nav-logo-img logo-ceo">
+      </div>
     </div>
   </nav>
 
@@ -124,7 +134,7 @@
           </div>
           <div class="stat-card">
             <div class="stat-num">1</div>
-            <div class="stat-label">Ngày học chuyên sâu</div>
+            <div class="stat-label">Ngày trọn vẹn cho văn hoá</div>
           </div>
           <div class="stat-card">
             <div class="stat-num">8h</div>
@@ -220,7 +230,8 @@
             </p>
           </div>
           <button id="about-read-more-btn" class="btn-readmore"
-            onclick="var el=document.getElementById('about-read-more'); if(el.style.display==='none'){el.style.display='block'; this.innerText='Thu gọn';}else{el.style.display='none'; this.innerText='Xem thêm';}">Xem thêm</button>
+            onclick="var el=document.getElementById('about-read-more'); if(el.style.display==='none'){el.style.display='block'; this.innerText='Thu gọn';}else{el.style.display='none'; this.innerText='Xem thêm';}">Xem
+            thêm</button>
 
           <p style="font-size:0.85rem; color:var(--text-muted); margin-top:1.5rem; font-style:italic;">
             * Sự kiện giới hạn số lượng dành riêng cho các nhà lãnh đạo đang đứng trước những quyết định quan trọng
@@ -284,6 +295,8 @@
     </div>
 
     <div class="schedule-wrap">
+      <h3 class="schedule-section-title">Buổi sáng</h3>
+
       <div class="schedule-item reveal">
         <div class="schedule-time">08:00</div>
         <div class="schedule-dot"></div>
@@ -292,6 +305,7 @@
           <p class="schedule-content-desc">Đăng ký tham dự, kết nối với cộng đồng lãnh đạo.</p>
         </div>
       </div>
+
       <div class="schedule-item reveal">
         <div class="schedule-time">08:30</div>
         <div class="schedule-dot"></div>
@@ -300,46 +314,41 @@
           <p class="schedule-content-desc">Giới thiệu chương trình, thiết lập không gian học tập sâu.</p>
         </div>
       </div>
+
       <div class="schedule-item reveal">
-        <div class="schedule-time">09:00</div>
+        <div class="schedule-time">08:45</div>
         <div class="schedule-dot"></div>
         <div>
-          <p class="schedule-content-title">Phiên 1 – Phạm Duy Hiếu</p>
-          <p class="schedule-content-desc">Trạng thái nội tâm và sức mạnh lãnh đạo tổ chức.</p>
-        </div>
-      </div>
-      <div class="schedule-item reveal">
-        <div class="schedule-time">11:00</div>
-        <div class="schedule-dot"></div>
-        <div>
-          <p class="schedule-content-title">Phiên 2 – Trần Quang Đức</p>
+          <p class="schedule-content-title">Diễn giả Trần Quang Đức</p>
           <p class="schedule-content-desc">Minh triết phương Đông trong quản trị và lãnh đạo hiện đại.</p>
         </div>
       </div>
 
       <div class="schedule-item reveal">
-        <div class="schedule-time">13:00</div>
+        <div class="schedule-time">11:30</div>
         <div class="schedule-dot"></div>
         <div>
-          <p class="schedule-content-title">Nghỉ trưa & Kết nối</p>
+          <p class="schedule-content-title">Nghỉ trưa và kết nối</p>
           <p class="schedule-content-desc">Thời gian giao lưu và kết nối với cộng đồng doanh nhân.</p>
         </div>
       </div>
 
+      <h3 class="schedule-section-title" style="margin-top: 3.5rem;">Buổi chiều</h3>
+
       <div class="schedule-item reveal">
-        <div class="schedule-time">14:30</div>
+        <div class="schedule-time">13:15</div>
         <div class="schedule-dot"></div>
         <div>
-          <p class="schedule-content-title">Workshop & Thực hành</p>
-          <p class="schedule-content-desc">Áp dụng triết lý vào các tình huống lãnh đạo thực tế.</p>
+          <p class="schedule-content-title">Diễn giả Phạm Duy Hiếu</p>
+          <p class="schedule-content-desc">Trạng thái nội tâm và sức mạnh lãnh đạo tổ chức.</p>
         </div>
       </div>
 
       <div class="schedule-item reveal">
-        <div class="schedule-time">16:30</div>
+        <div class="schedule-time">16:00</div>
         <div class="schedule-dot"></div>
         <div>
-          <p class="schedule-content-title">Hỏi & Đáp – Tổng kết</p>
+          <p class="schedule-content-title">Q&A</p>
           <p class="schedule-content-desc">Giải đáp trực tiếp, cam kết hành động và bế mạc.</p>
         </div>
       </div>
@@ -350,51 +359,213 @@
     </p>
   </section>
 
-  <!-- GALLERY SCROLL -->
-  <section id="gallery-scroll">
-    <div class="gallery-sticky">
-      <div class="gallery-track">
-        <div class="gallery-item"><img src="Image/z7838380610489_094cb73d3b455f220dfaab130ee12587.jpg" alt="Gallery">
+  <!-- GALLERY VERTICAL PARALLAX -->
+  <section id="gallery-vertical">
+    <div class="gallery-container">
+      <div class="section-header reveal">
+        <p class="section-label">Thư viện</p>
+        <h2 class="section-title">Khoảnh Khắc CEO TINHTHUC</h2>
+      </div>
+      <div class="gallery-grid">
+        <!-- Left Column -->
+        <div class="gallery-column col-left">
+          <div class="gallery-item">
+            <div class="gallery-item-num">01</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380610489_094cb73d3b455f220dfaab130ee12587.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Khai mạc sự kiện</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">04</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380628543_b78a7b07a03c149bf40eacad2bea93d8.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Tương tác khán giả</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">07</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380652544_4160716f4828a7cc447b0596e19df0c8.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Cảm xúc lắng đọng</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">10</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380672673_99f169e7476cb4482af89f0091568f05.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Hoạt động trải nghiệm</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">13</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380694000_ab435201f3851ae69426bae402b0ee25.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Sự kiện đồng hành</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">16</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380716174_cc0b1ec34a10a6472b0fe2f73a769f24.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Giao lưu kết nối</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">19</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380735342_bfe0e010b2590b773445216d0ed4383e.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Đội ngũ ban tổ chức</span>
+            </div>
+          </div>
         </div>
-        <div class="gallery-item"><img src="Image/z7838380618151_6d0454d07e323270ee01abdf591a9078.jpg" alt="Gallery">
+
+        <!-- Center Column -->
+        <div class="gallery-column col-center">
+          <div class="gallery-item">
+            <div class="gallery-item-num">02</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380618151_6d0454d07e323270ee01abdf591a9078.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Không gian khán phòng</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">05</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380639822_a8767dc75660a5a8e3fceded2fe8a20e.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Ban tổ chức sự kiện</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">08</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380658763_d8f02fa768bc7cfaa70591b07691b0ff.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Khoảnh khắc truyền cảm hứng</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">11</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380679530_341e162188a8c52d2af71a8a00407e05.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Phút giây tĩnh lặng</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">14</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380702558_f35d6768824c09ec66368942e99caa3a.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Rèn luyện tâm thức</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">17</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380720075_1585e6894f35cba0309c8f3d2a365085.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Đêm nhạc hội Heritage Show</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">20</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380939795_5b8e143ec6b9646466925f5a6c660abb.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Tri ân diễn giả</span>
+            </div>
+          </div>
         </div>
-        <div class="gallery-item"><img src="Image/z7838380622243_46a1806d62cf41eaa8c8984e3cca01f9.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380628543_b78a7b07a03c149bf40eacad2bea93d8.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380639822_a8767dc75660a5a8e3fceded2fe8a20e.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380645808_42a1f020ce4c0a73fbff4f836eb8b7c5.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380652544_4160716f4828a7cc447b0596e19df0c8.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380658763_d8f02fa768bc7cfaa70591b07691b0ff.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380667494_57e581340491dd1b7f1ba49566ce8f4d.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380672673_99f169e7476cb4482af89f0091568f05.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380679530_341e162188a8c52d2af71a8a00407e05.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380689446_38b4ec6e3d8ce34fac7911835acc1183.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380694000_ab435201f3851ae69426bae402b0ee25.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380702558_f35d6768824c09ec66368942e99caa3a.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380705696_dd9615cf9bbb084a9b43d88c09f87240.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380716174_cc0b1ec34a10a6472b0fe2f73a769f24.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380720075_1585e6894f35cba0309c8f3d2a365085.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380728113_763f3d6307e12c21b230d3b9c0bcd805.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380735342_bfe0e010b2590b773445216d0ed4383e.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838380939795_5b8e143ec6b9646466925f5a6c660abb.jpg" alt="Gallery">
-        </div>
-        <div class="gallery-item"><img src="Image/z7838382103500_b1d56447f456ebb5d274216bc221c27d.jpg" alt="Gallery">
+
+        <!-- Right Column -->
+        <div class="gallery-column col-right">
+          <div class="gallery-item">
+            <div class="gallery-item-num">03</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380622243_46a1806d62cf41eaa8c8984e3cca01f9.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Diễn giả chia sẻ</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">06</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380645808_42a1f020ce4c0a73fbff4f836eb8b7c5.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Kết nối các nhà lãnh đạo</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">09</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380667494_57e581340491dd1b7f1ba49566ce8f4d.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Tọa đàm và thảo luận</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">12</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380689446_38b4ec6e3d8ce34fac7911835acc1183.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Năng lượng tập thể</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">15</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380705696_dd9615cf9bbb084a9b43d88c09f87240.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Kiến tạo giá trị thực</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">18</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838380728113_763f3d6307e12c21b230d3b9c0bcd805.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Cấy nền tình thân</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-num">21</div>
+            <div class="gallery-img-wrap">
+              <img src="Image/z7838382103500_b1d56447f456ebb5d274216bc221c27d.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-title">Hành trình trọn vẹn</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -409,7 +580,9 @@
     </div>
 
     <div class="video-container reveal reveal-zoom">
-      <iframe src="https://player.vimeo.com/video/1193944026?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Video Điểm Nhấn Sự Kiện"></iframe>
+      <iframe
+        src="https://player.vimeo.com/video/1193944026?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0"
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Video Điểm Nhấn Sự Kiện"></iframe>
     </div>
 
   </section>
@@ -438,7 +611,7 @@
           <li>Tài liệu sự kiện</li>
           <li>Kết nối cộng đồng lãnh đạo</li>
           <li>Truy cập không gian networking</li>
-          <li>Chứng nhận tham dự</li>
+          <li>Miễn phí The Heritage Show </li>
         </ul>
         <a href="https://KAIpany.com/YTP-DaNang" target="_blank" class="btn-primary btn-full">Đăng ký ngay</a>
       </div>
@@ -452,7 +625,7 @@
           <li>Tài liệu sự kiện</li>
           <li>Kết nối cộng đồng lãnh đạo</li>
           <li>Truy cập không gian networking</li>
-          <li>Chứng nhận tham dự</li>
+          <li>Miễn phí The Heritage Show </li>
         </ul>
         <a href="https://KAIpany.com/YTP-DaNang" target="_blank" class="btn-outline btn-full"
           style="display:block;text-align:center;text-decoration:none">Đăng ký</a>
@@ -503,26 +676,32 @@
         <!-- Group 1 -->
         <div class="partners-group">
           <img src="Logo/Logo SVF tr.png" alt="Startup Vietnam Foundation" class="partner-img-svf">
-          <img src="Logo/Cay Nen Doanh Nhan_Logo(final).png" alt="Cấy Nến Doanh Nhân" class="partner-img-caynen">
-          <img src="Logo/JCI Hoi An.png" alt="JCI Hội An" class="partner-img-jci">
-          <img src="Logo/DN_365_All_White.png" alt="Đà Nẵng 365" class="partner-img-danang">
-          <img src="Logo/CEOTINHTHUC-QTvKN-FULL.png" alt="CEO Tinh Thức" class="partner-img-ceo">
+          <img src="Logo/Cay Nen Doanh Nhan_Logo(final).png" alt="Cáº¥y Ná»n Doanh NhÃ¢n" class="partner-img-caynen">
+          <img src="Logo/JCI Hoi An.png" alt="JCI Há»™i An" class="partner-img-jci">
+          <img src="Logo/JCI Danang.png" alt="JCI ÄÃ  Náºµng" class="partner-img-jci">
+          <img src="Logo/JCI Hue.png" alt="JCI Huáº¿" class="partner-img-jci">
+          <img src="Logo/DN_365_All_White.png" alt="ÄÃ  Náºµng 365" class="partner-img-danang">
+          <img src="Logo/CEOTINHTHUC-QTvKN-FULL.png" alt="CEO Tinh Thá»©c" class="partner-img-ceo">
         </div>
         <!-- Group 2 -->
         <div class="partners-group" aria-hidden="true">
           <img src="Logo/Logo SVF tr.png" alt="Startup Vietnam Foundation" class="partner-img-svf">
-          <img src="Logo/Cay Nen Doanh Nhan_Logo(final).png" alt="Cấy Nến Doanh Nhân" class="partner-img-caynen">
-          <img src="Logo/JCI Hoi An.png" alt="JCI Hội An" class="partner-img-jci">
-          <img src="Logo/DN_365_All_White.png" alt="Đà Nẵng 365" class="partner-img-danang">
-          <img src="Logo/CEOTINHTHUC-QTvKN-FULL.png" alt="CEO Tinh Thức" class="partner-img-ceo">
+          <img src="Logo/Cay Nen Doanh Nhan_Logo(final).png" alt="Cáº¥y Ná»n Doanh NhÃ¢n" class="partner-img-caynen">
+          <img src="Logo/JCI Hoi An.png" alt="JCI Há»™i An" class="partner-img-jci">
+          <img src="Logo/JCI Danang.png" alt="JCI ÄÃ  Náºµng" class="partner-img-jci">
+          <img src="Logo/JCI Hue.png" alt="JCI Huáº¿" class="partner-img-jci">
+          <img src="Logo/DN_365_All_White.png" alt="ÄÃ  Náºµng 365" class="partner-img-danang">
+          <img src="Logo/CEOTINHTHUC-QTvKN-FULL.png" alt="CEO Tinh Thá»©c" class="partner-img-ceo">
         </div>
         <!-- Group 3 -->
         <div class="partners-group" aria-hidden="true">
           <img src="Logo/Logo SVF tr.png" alt="Startup Vietnam Foundation" class="partner-img-svf">
-          <img src="Logo/Cay Nen Doanh Nhan_Logo(final).png" alt="Cấy Nến Doanh Nhân" class="partner-img-caynen">
-          <img src="Logo/JCI Hoi An.png" alt="JCI Hội An" class="partner-img-jci">
-          <img src="Logo/DN_365_All_White.png" alt="Đà Nẵng 365" class="partner-img-danang">
-          <img src="Logo/CEOTINHTHUC-QTvKN-FULL.png" alt="CEO Tinh Thức" class="partner-img-ceo">
+          <img src="Logo/Cay Nen Doanh Nhan_Logo(final).png" alt="Cáº¥y Ná»n Doanh NhÃ¢n" class="partner-img-caynen">
+          <img src="Logo/JCI Hoi An.png" alt="JCI Há»™i An" class="partner-img-jci">
+          <img src="Logo/JCI Danang.png" alt="JCI ÄÃ  Náºµng" class="partner-img-jci">
+          <img src="Logo/JCI Hue.png" alt="JCI Huáº¿" class="partner-img-jci">
+          <img src="Logo/DN_365_All_White.png" alt="ÄÃ  Náºµng 365" class="partner-img-danang">
+          <img src="Logo/CEOTINHTHUC-QTvKN-FULL.png" alt="CEO Tinh Thá»©c" class="partner-img-ceo">
         </div>
       </div>
     </div>
@@ -531,77 +710,118 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-container">
-      <!-- Col 1 -->
-      <div class="footer-col">
-        <img src="Logo/CEOTINHTHUC-QTvKN-FULL.png" alt="CEO Tinh Thức" class="footer-logo">
-        <a href="https://www.google.com/maps/place/Interconnection+M%E1%BB%B9+%C4%90%C3%ACnh/@21.0205971,105.7593674,17z/data=!3m1!4b1!4m6!3m5!1s0x313455f1b515c8e9:0xafcd662cf23ec7e3!8m2!3d21.0205971!4d105.7619477!16s%2Fg%2F11khy73m7_?entry=tts&g_ep=EgoyMDI1MDIxMi4wIPu8ASoASAFQAw%3D%3D" target="_blank" class="footer-item">
-          <svg viewBox="0 0 24 24">
-            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+      <!-- Col 1: Brand Info -->
+      <div class="footer-col brand-col">
+        <img src="Logo/Logo SVF tr.png" alt="SVF" class="footer-logo">
+        <p class="brand-desc">Khởi nguồn từ Group QTvKN. Hành trình rèn luyện tâm thức, kiến tạo giá trị thực và kết nối
+          kinh doanh bền vững cho các nhà lãnh đạo.</p>
+        <div class="footer-partners">
+          <p class="partners-title">Đơn vị tổ chức & đồng hành</p>
+          <div class="partners-logos">
+            <img src="Logo/Cay Nen Doanh Nhan_Logo(final).png" alt="Cáº¥y Ná»n Doanh NhÃ¢n" class="partner-logo-img">
+            <img src="Logo/JCI Hoi An.png" alt="JCI Há»™i An" class="partner-logo-img">
+            <img src="Logo/CEOTINHTHUC-QTvKN-FULL.png" alt="CEO Tinh Thá»©c" class="partner-logo-img partner-logo-ceo">
+          </div>
+        </div>
+      </div>
+
+      <!-- Col 2: Contact Info -->
+      <div class="footer-col contact-col">
+        <h4 class="footer-title">Thông tin liên hệ</h4>
+
+        <a href="https://www.google.com/maps/place/Interconnection+M%E1%BB%B9+%C4%90%C3%ACnh/@21.0205971,105.7593674,17z/data=!3m1!4b1!4m6!3m5!1s0x313455f1b515c8e9:0xafcd662cf23ec7e3!8m2!3d21.0205971!4d105.7619477!16s%2Fg%2F11khy73m7_?entry=tts&g_ep=EgoyMDI1MDIxMi4wIPu8ASoASAFQAw%3D%3D"
+          target="_blank" class="footer-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
           </svg>
-          <span class="footer-text">Address: 32 P. Đỗ Xuân Hợp, Hà Nội, Việt Nam</span>
+          <span class="footer-text"><strong>Địa chỉ:</strong> Shophouse SH05 Opal Tower, 92 Đ. Nguyễn Hữu Cảnh, Saigon
+            Pearl, Bình Thạnh, TP. Hồ Chí Minh</span>
         </a>
-        <a href="mailto:support@ceotinhthuc.vn" class="footer-item">
-          <svg viewBox="0 0 24 24">
-            <path
-              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+
+        <a href="mailto:mila.hoang@startupfoundation.org.vn" class="footer-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
           </svg>
-          <span class="footer-text">Email: support@ceotinhthuc.vn</span>
+          <span class="footer-text"><strong>Email:</strong> mila.hoang@startupfoundation.org.vn</span>
         </a>
-        <a href="https://www.facebook.com/CEOTinhThuc" target="_blank" class="footer-item">
-          <svg viewBox="0 0 24 24">
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+
+        <a href="https://www.facebook.com/startupvietnamfoundation" target="_blank" class="footer-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
           </svg>
-          <span class="footer-text">Fanpage CEOTINHTHUC</span>
+          <span class="footer-text"><strong>Fanpage:</strong> startupvietnamfoundation</span>
         </a>
-        <a href="tel:0981118808" class="footer-item">
-          <svg viewBox="0 0 24 24">
+
+        <a href="tel:0325201612" class="footer-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
             <path
-              d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
           </svg>
-          <span class="footer-text">Liên hệ: 098.111.8808</span>
+          <span class="footer-text"><strong>Liên hệ:</strong> 0325 201 612</span>
         </a>
       </div>
 
-      <!-- Col 2 -->
-      <div class="footer-col">
-        <img src="Logo/rise to shine.png" alt="Rise to Shine" class="footer-logo" style="height: 74px; margin-top: -26px;">
-        <span class="footer-text">Một phần doanh thu được dành cho Chương trình RTS <br><em>"Nơi ươm mầm những dự án xã
-            hội"</em></span>
-      </div>
-
-      <!-- Col 3 -->
-      <div class="footer-col" style="padding-top: 0.5rem;">
-        <p class="footer-title">KẾT NỐI VỚI CỘNG ĐỒNG</p>
+      <!-- Col 3: Community Connect -->
+      <div class="footer-col community-col">
+        <h4 class="footer-title">Kết nối với cộng đồng</h4>
         <div class="footer-socials">
-          <div class="social-row">
-            <a href="https://zalo.me/g/ainquj369" target="_blank" class="social-btn">
-              <div class="social-icon-box">Zalo</div>
-              GROUP CHAT
-            </a>
-            <a href="https://www.facebook.com/groups/ceotinhthuc.vn" target="_blank" class="social-btn">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z" />
-              </svg>
-              GROUP FACEBOOK
-            </a>
-          </div>
-          <div class="social-row">
-            <a href="https://www.youtube.com/@ceotinhthuc" target="_blank" class="social-btn">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z" />
-              </svg>
-              KÊNH YOUTUBE
-            </a>
-          </div>
+          <a href="https://zalo.me/g/vqttfzvhzjo5ztagdax8" target="_blank" class="social-card zalo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="social-svg">
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              <path d="M9 9h6l-6 6h6" />
+            </svg>
+            <div class="social-info">
+              <span class="social-label-text">Zalo Group Chat</span>
+              <span class="social-desc">Tham gia nhóm trao đổi, chia sẻ</span>
+            </div>
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+
+          <a href="https://www.facebook.com/startupvietnamfoundation" target="_blank" class="social-card facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="social-svg">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+            <div class="social-info">
+              <span class="social-label-text">Group Facebook</span>
+              <span class="social-desc">Cập nhật tin tức và sự kiện</span>
+            </div>
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+
+          <a href="https://www.youtube.com/@startupvietnamfoundationsv4662" target="_blank" class="social-card youtube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="social-svg">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+            </svg>
+            <div class="social-info">
+              <span class="social-label-text">Kênh YouTube</span>
+              <span class="social-desc">Xem lại các video chia sẻ ý nghĩa</span>
+            </div>
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
 
     <div class="footer-bottom">
-      ©2026 All rights reserved ceotinhthuc.vn | Design by GoMedia
+      ©2026 All rights reserved StartupVietnamFoundation.vn | Design by GoMedia
     </div>
   </footer>
 
