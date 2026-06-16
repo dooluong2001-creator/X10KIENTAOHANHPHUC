@@ -881,6 +881,7 @@ Text Domain: x10-theme
       color: var(--text-muted);
       line-height: 1.6;
       font-weight: 300;
+      text-align: justify;
     }
 
     /* Staggered Animations */
