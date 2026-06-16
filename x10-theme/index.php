@@ -19,7 +19,7 @@
   <div id="preloader">
     <div class="preloader-content">
       <div class="preloader-poster-wrapper">
-        <img src="<?php echo get_template_directory_uri(); ?>/Image/z7914699438259_fa429db0020bfda955c248344713c291.jpg" alt="X10 Kiến Tạo Hạnh Phúc Poster"
+        <img src="<?php echo get_template_directory_uri(); ?>/Image/Hình ảnh x10/1.png" alt="X10 Kiến Tạo Hạnh Phúc Poster"
           class="preloader-poster">
       </div>
       <div class="preloader-progress-wrap">
@@ -98,62 +98,73 @@
       <div class="reveal">
         <div class="about-stats">
           <div class="stat-card">
-            <div class="stat-num">3</div>
+            <div class="stat-num">4</div>
             <div class="stat-label">Diễn giả hàng đầu</div>
           </div>
           <div class="stat-card">
             <div class="stat-num">1</div>
-            <div class="stat-label">Ngày trọn vẹn hạnh phúc</div>
+            <div class="stat-label">Cuộc gặp gỡ trưởng thành</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num">10h</div>
-            <div class="stat-label">Trải nghiệm trực tiếp</div>
+            <div class="stat-num">8h</div>
+            <div class="stat-label">Trải nghiệm & tương tác</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num">Hot</div>
-            <div class="stat-label">Vé tham gia sự kiện</div>
+            <div class="stat-num">350K</div>
+            <div class="stat-label">Early bird đến hết 18/06</div>
           </div>
         </div>
         <p class="about-label">Về sự kiện</p>
-        <h2 class="about-heading">Khi hạnh phúc bắt đầu từ bên trong</h2>
+        <h2 class="about-heading">Khi hạnh phúc là nền tảng của thành công</h2>
         <div class="about-content-wrapper">
           <p class="about-body" style="color:var(--color-primary-green); font-weight:600; font-style:italic;">
-            “Mọi tổ chức đều mang dáng hình nội tâm của lãnh đạo.”
+            “Hạnh phúc có trước - X10 có sau.”
           </p>
           <p class="about-body" style="margin-top:1rem">
-            Có phải khi đã đi một quãng dài trên hành trình lãnh đạo bạn sẽ nhận ra, rất nhiều vấn đề trong tổ chức
-            không bắt đầu từ chiến lược, sản phẩm hay nhân sự. Mà bắt đầu từ trạng thái của người đứng đầu.
+            Nhiều người trưởng thành bước vào cuộc sống với một niềm tin quen thuộc rằng hạnh phúc là phần thưởng dành cho những ai đạt được đủ thành công. Chỉ cần cố gắng thêm một chút, đạt thêm một cột mốc, hoàn thành thêm một mục tiêu, rồi mọi thứ sẽ ổn.
           </p>
           <p class="about-body" style="margin-top:1rem">
-            Có những doanh nghiệp dù doanh thu vẫn tăng, đội ngũ vẫn đông, thị trường vẫn còn cơ hội. Nhưng bên
-            trong:<br>
-            - người giỏi dần im lặng<br>
-            - nhân sự mất kết nối<br>
-            - mọi quyết định đều phụ thuộc vào một người<br>
-            - leader càng ngày càng áp lực và cô độc
+            Nhưng càng đi xa, càng nhiều người bắt đầu tự hỏi:<br>
+            - Liệu có phải chúng ta đang đánh đổi quá nhiều để có được những điều mình mong muốn?<br>
+            - Liệu thành công và hạnh phúc thực sự là hai điểm đến khác nhau?
+          </p>
+          <p class="about-body" style="margin-top:1rem">
+            Có những người đạt được vị trí mà mình từng mơ ước. Có những doanh nghiệp vẫn đang tăng trưởng. Có những mục tiêu vẫn đang lần lượt được hoàn thành. Nhưng cảm giác bình an, sự kết nối và niềm vui trong cuộc sống lại không tự động xuất hiện cùng những thành tựu đó.
+          </p>
+          <p class="about-body" style="margin-top:1rem">
+            Bên trong nhiều người trưởng thành vẫn là những áp lực chưa được gọi tên, những mối quan hệ dần xa cách và cảm giác đủ đầy luôn ở một điểm nào đó phía trước.
           </p>
           <div id="about-read-more" style="display: none;">
             <p class="about-body" style="margin-top:1rem">
-              Thoạt nhìn, đó là bài toán quản trị. Nhưng nếu nhìn sâu hơn, đó là bài toán của nội tâm lãnh đạo.
+              Thoạt nhìn, đó là câu chuyện của công việc, doanh nghiệp hay cuộc sống. Nhưng nếu nhìn sâu hơn, đó là câu chuyện về nền tảng mà chúng ta đang xây dựng mọi thứ trên đó.
+            </p>
+            <p class="about-body" style="margin-top:1rem; color:var(--color-primary-green); font-weight:600;">
+              NẾU THỨ TỰ ĐÓ ĐANG BỊ ĐẢO NGƯỢC THÌ SAO?
+            </p>
+            <p class="about-body" style="margin-top:0.5rem">
+              Nếu hạnh phúc không phải là phần thưởng sau thành công mà chính là nền tảng giúp chúng ta có đủ năng lượng để đi đường dài, đủ sự rõ ràng để đưa ra những quyết định quan trọng và đủ sự cân bằng để phát triển mà không đánh mất những điều mình thực sự trân trọng thì sao?
             </p>
             <p class="about-body" style="margin-top:1rem">
-              <span style="color:var(--color-primary-green); font-weight:600;">Hành trình kiến tạo hạnh phúc bắt đầu từ chính người dẫn dắt.</span><br>
-              Điều giúp một doanh nghiệp tồn tại ở giai đoạn đầu thường là sự quyết liệt. Nhưng điều giúp doanh nghiệp đi đường dài lại là văn hóa, niềm tin, và một nội lực đủ vững vàng để đối diện với mọi biến động.
+              Thực tế, ngày càng nhiều nghiên cứu về hiệu suất con người, nhiều doanh nghiệp và nhà lãnh đạo trên thế giới đang nhìn hạnh phúc theo hướng này. Không chỉ là một cảm xúc tích cực, hạnh phúc còn là điều kiện giúp con người duy trì hiệu quả, khả năng thích nghi và sự phát triển bền vững trong một thế giới ngày càng nhiều áp lực và biến động.
+            </p>
+            <p class="about-body" style="margin-top:1.5rem; color:var(--color-primary-green); font-weight:600;">
+              ĐÓ CŨNG LÀ CÂU HỎI MÀ X10 KIẾN TẠO HẠNH PHÚC MUỐN CÙNG BẠN KHÁM PHÁ
+            </p>
+            <p class="about-body" style="margin-top:0.5rem">
+              Không phải liệu thành công có quan trọng hay không. Mà liệu chúng ta có thể phát triển mạnh mẽ hơn, đi xa hơn và sống trọn vẹn hơn khi hạnh phúc không còn luôn bị đặt ở cuối danh sách ưu tiên.
             </p>
             <p class="about-body" style="margin-top:1rem">
-              Chương trình sẽ dẫn dắt bạn đi qua các chủ đề sâu sắc để kiến tạo một doanh nghiệp hạnh phúc và thịnh vượng bền vững:
+              X10 KIẾN TẠO HẠNH PHÚC là nơi những doanh nhân, nhà lãnh đạo và người trưởng thành cùng gặp gỡ để lắng nghe những góc nhìn thực tiễn về hạnh phúc, lãnh đạo, văn hóa doanh nghiệp và hành trình phát triển con người.
             </p>
             <p class="about-body" style="margin-top:1rem">
-              <strong style="color:var(--color-primary-green);">Keynote 1: X10 Kiến Tạo Hạnh Phúc (Phạm Duy Hiếu)</strong><br>
-              Khai mở tư duy, định hình lại những giá trị cốt lõi của một tổ chức hạnh phúc, nơi mỗi thành viên được truyền cảm hứng để cống hiến hết mình.
+              Mỗi diễn giả mang đến một câu chuyện khác nhau. Mỗi trải nghiệm mở ra một góc nhìn khác nhau. Nhưng tất cả cùng gặp nhau ở một niềm tin:
+            </p>
+            <p class="about-body" style="margin-top:1.5rem; font-weight:700; color:var(--color-primary-green); text-align:center; font-size:1.1rem; line-height:1.4;">
+              HẠNH PHÚC KHÔNG PHẢI PHẦN THƯỞNG SAU THÀNH CÔNG<br>
+              MÀ CÓ THỂ CHÍNH LÀ ĐIỂM KHỞI ĐẦU CỦA MỘT HÀNH TRÌNH THÀNH CÔNG BỀN VỮNG HƠN.
             </p>
             <p class="about-body" style="margin-top:1rem">
-              <strong style="color:var(--color-primary-green);">Keynote 2: Cởi Trói Để Tự Do (Lê Bá Thông)</strong><br>
-              Hành trình giải phóng áp lực nội tâm, cởi bỏ nỗi sợ hãi để lãnh đạo bằng sự thấu hiểu và tự do đích thực.
-            </p>
-            <p class="about-body" style="margin-top:1rem">
-              <strong style="color:var(--color-primary-green);">Keynote 3: Chia Sẻ Bài Học Thực Tiễn (MS. Hoài Duyên)</strong><br>
-              Các bài học thực tiễn, mô hình thực hành và trải nghiệm trực tiếp từ hành trình kiến tạo hạnh phúc tại Biti's Academy và Tập đoàn Biti's.
+              Nếu bạn cũng đang tìm kiếm một góc nhìn mới về hạnh phúc, thành công và sự phát triển bền vững, hẹn gặp bạn tại X10 KIẾN TẠO HẠNH PHÚC.
             </p>
           </div>
 
@@ -181,14 +192,14 @@
       <div class="speaker-card reveal">
         <div class="speaker-img-wrap">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/Image/z7914698301601_adf2bff8a642abc2a1e89b45eb9de83a.jpg"
-            alt="Lê Bá Thông" style="width:100%;height:100%;object-fit:cover;object-position:top center;">
+            src="<?php echo get_template_directory_uri(); ?>/Image/Hình ảnh x10/38.png"
+            alt="GS. Phan Văn Trường" style="width:100%;height:100%;object-fit:cover;object-position:top center;">
         </div>
         <div class="speaker-info">
-          <h3 class="speaker-name">Lê Bá Thông</h3>
-          <p class="speaker-role">Đồng sáng lập & Nguyên TGĐ TTT Corporation</p>
+          <h3 class="speaker-name">GS. Phan Văn Trường</h3>
+          <p class="speaker-role">Nhà sáng lập Hệ sinh thái Cấy Nền</p>
           <p class="speaker-bio">
-            Diễn giả truyền cảm hứng, doanh nhân tiên phong về thúc đẩy văn hóa doanh nghiệp hạnh phúc.
+            Giáo sư cao cấp, chuyên gia quản trị và thương thuyết quốc tế, cố vấn thương mại quốc tế của Chính phủ Pháp.
           </p>
           <span class="speaker-tag">Diễn giả</span>
         </div>
@@ -197,12 +208,12 @@
       <div class="speaker-card reveal">
         <div class="speaker-img-wrap">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/Image/z7914698308361_26241d0a90ae492c47b7830d5c8a3fa7.jpg"
+            src="<?php echo get_template_directory_uri(); ?>/Image/Hình ảnh x10/36.png"
             alt="Phạm Duy Hiếu" style="width:100%;height:100%;object-fit:cover;object-position:top center;">
         </div>
         <div class="speaker-info">
           <h3 class="speaker-name">Phạm Duy Hiếu</h3>
-          <p class="speaker-role">Chuyên gia, Diễn giả, Coach<br>Nguyên TGĐ ABBank, Chủ tịch Quỹ SVF</p>
+          <p class="speaker-role">Nguyên Tổng Giám đốc ABBANK<br>Chủ tịch Hội đồng Quản lý Quỹ SVF</p>
           <p class="speaker-bio">
             Chuyên gia huấn luyện phát triển lãnh đạo, chuyển hóa nội tâm và đồng hành phát triển tổ chức hạnh phúc.
           </p>
@@ -213,12 +224,28 @@
       <div class="speaker-card reveal">
         <div class="speaker-img-wrap">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/Image/z7914698315523_8d04fd6e6ed27de0f49f293058aed09f.jpg"
+            src="<?php echo get_template_directory_uri(); ?>/Image/Hình ảnh x10/35.png"
+            alt="Lê Bá Thông" style="width:100%;height:100%;object-fit:cover;object-position:top center;">
+        </div>
+        <div class="speaker-info">
+          <h3 class="speaker-name">Lê Bá Thông</h3>
+          <p class="speaker-role">Đồng sáng lập & Nguyên Tổng Giám đốc TTT Corporation</p>
+          <p class="speaker-bio">
+            Diễn giả truyền cảm hứng, doanh nhân tiên phong về thúc đẩy văn hóa doanh nghiệp hạnh phúc.
+          </p>
+          <span class="speaker-tag">Diễn giả</span>
+        </div>
+      </div>
+
+      <div class="speaker-card reveal">
+        <div class="speaker-img-wrap">
+          <img
+            src="<?php echo get_template_directory_uri(); ?>/Image/Hình ảnh x10/37.png"
             alt="MS. Hoài Duyên" style="width:100%;height:100%;object-fit:cover;object-position:top center;">
         </div>
         <div class="speaker-info">
           <h3 class="speaker-name">MS. Hoài Duyên</h3>
-          <p class="speaker-role">Giám đốc Nhân sự & Phát triển tổ chức Biti's<br>COO tại Biti's Academy</p>
+          <p class="speaker-role">Giám đốc Nhân sự & Phát triển Tổ chức Biti's<br>COO Biti's Academy</p>
           <p class="speaker-bio">
             Chuyên gia về kiến tạo tổ chức hạnh phúc, dẫn dắt đội ngũ thông qua giáo dục và rèn luyện tâm thức.
           </p>
@@ -253,17 +280,26 @@
         <div class="schedule-time">09:00 – 09:05</div>
         <div class="schedule-dot"></div>
         <div>
-          <p class="schedule-content-title">Khai mạc và giới thiệu chương trình</p>
-          <p class="schedule-content-desc">Khai mạc sự kiện, giới thiệu ban tổ chức, diễn giả và phổ biến nội dung chương trình.</p>
+          <p class="schedule-content-title">Khai mạc & Giới thiệu chương trình</p>
+          <p class="schedule-content-desc">Khai mạc sự kiện, giới thiệu ban tổ chức, các diễn giả và phổ biến nội dung chương trình.</p>
         </div>
       </div>
 
       <div class="schedule-item reveal">
-        <div class="schedule-time">09:15 – 10:35</div>
+        <div class="schedule-time">09:05 – 10:05</div>
         <div class="schedule-dot"></div>
         <div>
-          <p class="schedule-content-title">Keynote 1 – X10 Kiến Tạo Hạnh Phúc (Phạm Duy Hiếu)</p>
-          <p class="schedule-content-desc">Khai mở tư duy, định hình lại những giá trị cốt lõi của một tổ chức hạnh phúc.</p>
+          <p class="schedule-content-title">KEYNOTE 1: X10 KIẾN TẠO HẠNH PHÚC</p>
+          <p class="schedule-content-desc">Diễn giả <strong>Phạm Duy Hiếu</strong> (Nguyên Tổng Giám đốc ABBANK - Chủ tịch HĐQL Quỹ SVF) chia sẻ về định hình lại các giá trị cốt lõi của một tổ chức hạnh phúc.</p>
+        </div>
+      </div>
+
+      <div class="schedule-item reveal">
+        <div class="schedule-time">10:05 – 10:35</div>
+        <div class="schedule-dot"></div>
+        <div>
+          <p class="schedule-content-title">KEYNOTE 2: HÀNH TRÌNH ĐI TÌM HẠNH PHÚC, BÌNH AN VÀ Ý NGHĨA SỐNG</p>
+          <p class="schedule-content-desc">Diễn giả <strong>GS. Phan Văn Trường</strong> (Nhà sáng lập Hệ sinh thái Cấy Nền) chia sẻ góc nhìn sâu sắc và câu chuyện thực tế về hành trình kiến tạo hạnh phúc và bình an nội tâm.</p>
         </div>
       </div>
 
@@ -280,8 +316,8 @@
         <div class="schedule-time">10:50 – 12:00</div>
         <div class="schedule-dot"></div>
         <div>
-          <p class="schedule-content-title">Keynote 2 – Cởi Trói Để Tự Do (Lê Bá Thông)</p>
-          <p class="schedule-content-desc">Hành trình giải phóng áp lực nội tâm, cởi bỏ nỗi sợ hãi để lãnh đạo bằng sự thấu hiểu.</p>
+          <p class="schedule-content-title">KEYNOTE 3: CỞI TRÓI ĐỂ TỰ DO</p>
+          <p class="schedule-content-desc">Diễn giả <strong>Lê Bá Thông</strong> (Đồng sáng lập - Nguyên Tổng Giám đốc TTT Corporation) chia sẻ về hành trình giải phóng áp lực nội tâm để lãnh đạo bằng sự thấu hiểu.</p>
         </div>
       </div>
 
@@ -290,45 +326,45 @@
         <div class="schedule-dot"></div>
         <div>
           <p class="schedule-content-title">Nghỉ trưa</p>
-          <p class="schedule-content-desc">Thời gian dùng cơm trưa, nghỉ ngơi tại chỗ và tiếp tục các hoạt động kết nối tự do.</p>
+          <p class="schedule-content-desc">Dùng cơm trưa, nghỉ ngơi tại chỗ và tiếp tục các hoạt động kết nối giao lưu.</p>
         </div>
       </div>
 
       <h3 class="schedule-section-title" style="margin-top: 3.5rem;">Buổi chiều</h3>
 
       <div class="schedule-item reveal">
-        <div class="schedule-time">13:30 – 14:30</div>
+        <div class="schedule-time">13:30 – 14:00</div>
         <div class="schedule-dot"></div>
         <div>
-          <p class="schedule-content-title">Keynote 3 – Chia Sẻ Bài Học Thực Tiễn (MS. Hoài Duyên)</p>
-          <p class="schedule-content-desc">Các bài học thực tiễn, mô hình thực hành và trải nghiệm trực tiếp từ Biti's Academy.</p>
+          <p class="schedule-content-title">ĐIỂM CHẠM LÃNH ĐẠO</p>
+          <p class="schedule-content-desc">Không gian tương tác và kết nối sâu sắc do diễn giả <strong>Phạm Duy Hiếu</strong> trực tiếp dẫn dắt.</p>
         </div>
       </div>
 
       <div class="schedule-item reveal">
-        <div class="schedule-time">14:30 – 14:45</div>
+        <div class="schedule-time">14:00 – 15:00</div>
         <div class="schedule-dot"></div>
         <div>
-          <p class="schedule-content-title">Giao lưu Chánh Lãnh Đạo</p>
-          <p class="schedule-content-desc">Không gian đối thoại trực tiếp, chia sẻ trải nghiệm giữa các thế hệ lãnh đạo.</p>
+          <p class="schedule-content-title">KEYNOTE 4: CHIA SẺ BÀI HỌC THỰC TIỄN – VẬN HÀNH VÀ PHÁT TRIỂN TỔ CHỨC BẰNG VĂN HÓA HẠNH PHÚC HAPPY BITI'S</p>
+          <p class="schedule-content-desc">Diễn giả <strong>Chị Hoài Duyên</strong> (Giám đốc Nhân sự & Phát triển Tổ chức - COO Biti's Academy) chia sẻ những đúc kết thực tiễn từ mô hình Happy Biti's.</p>
         </div>
       </div>
 
       <div class="schedule-item reveal">
-        <div class="schedule-time">14:45 – 15:00</div>
+        <div class="schedule-time">15:00 – 15:15</div>
         <div class="schedule-dot"></div>
         <div>
           <p class="schedule-content-title">Tea Break</p>
-          <p class="schedule-content-desc">Nghỉ giải lao dùng trà chiều, chuẩn bị cho phiên tọa đàm bàn tròn.</p>
+          <p class="schedule-content-desc">Nghỉ giải lao dùng trà chiều, chuẩn bị cho phiên tọa đàm.</p>
         </div>
       </div>
 
       <div class="schedule-item reveal">
-        <div class="schedule-time">15:00 – 16:15</div>
+        <div class="schedule-time">15:15 – 16:15</div>
         <div class="schedule-dot"></div>
         <div>
-          <p class="schedule-content-title">Panel – Tọa Đàm Con Đường Hạnh Phúc</p>
-          <p class="schedule-content-desc">Phiên thảo luận đặc biệt giữa các diễn giả và khách mời về cách thức hiện thực hóa hạnh phúc.</p>
+          <p class="schedule-content-title">PANEL: CON ĐƯỜNG HẠNH PHÚC</p>
+          <p class="schedule-content-desc">Tọa đàm bàn tròn đặc biệt. Host: <strong>Ms. Ruby</strong>. Khách mời thảo luận: <strong>Anh Phạm Duy Hiếu</strong>, <strong>Anh Lê Bá Thông</strong>, <strong>Chị Hoài Duyên</strong> và <strong>Anh Lê Thành Vân</strong>.</p>
         </div>
       </div>
 
@@ -336,8 +372,8 @@
         <div class="schedule-time">16:15 – 17:00</div>
         <div class="schedule-dot"></div>
         <div>
-          <p class="schedule-content-title">Tổng kết & Kết thúc chương trình</p>
-          <p class="schedule-content-desc">Tổng kết thông điệp sự kiện, chụp hình lưu niệm tập thể và khép lại chương trình.</p>
+          <p class="schedule-content-title">Tổng kết & Bế mạc chương trình</p>
+          <p class="schedule-content-desc">Tổng kết các bài học cốt lõi, chụp hình lưu niệm tập thể và khép lại chương trình.</p>
         </div>
       </div>
     </div>
@@ -477,7 +513,7 @@
         </div>
         <p class="price-label">Early Bird</p>
         <div class="price-amount">350.000<span>đ</span></div>
-        <p class="price-until">Chỉ đến hết ngày 16/06/2026</p>
+        <p class="price-until">Chỉ đến hết ngày 18/06/2026</p>
         <ul class="price-features">
           <li>Tham dự toàn bộ chương trình</li>
           <li>Tài liệu sự kiện</li>
@@ -491,7 +527,7 @@
       <div class="price-card reveal">
         <p class="price-label">Giá thường</p>
         <div class="price-amount" style="color:var(--text-muted)">500.000<span>đ</span></div>
-        <p class="price-until">Từ ngày 17/06/2026</p>
+        <p class="price-until">Từ ngày 19/06/2026</p>
         <ul class="price-features">
           <li>Tham dự toàn bộ chương trình</li>
           <li>Tài liệu sự kiện</li>

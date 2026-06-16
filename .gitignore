@@ -4,3 +4,11 @@ Video/
 *.ps1
 .git
 .gemini
+
+# Ignore large unused design assets in "Hình ảnh x10"
+Image/Hình ảnh x10/*
+!Image/Hình ảnh x10/1.png
+!Image/Hình ảnh x10/35.png
+!Image/Hình ảnh x10/36.png
+!Image/Hình ảnh x10/37.png
+!Image/Hình ảnh x10/38.png
