@@ -751,6 +751,7 @@ Text Domain: x10-theme
       font-weight: 300;
       min-height: 5.8rem;
       margin-bottom: 1.25rem;
+      text-align: justify;
     }
 
     .speaker-tag {
